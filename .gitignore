@@ -1,0 +1,9 @@
+## Don't track the automatic blender backup file.
+*.blend1
+
+## Don't track IDE configuration.
+.vscode/
+
+## Don't track OS-generated files.
+**/Icon
+**/.DS_Store
