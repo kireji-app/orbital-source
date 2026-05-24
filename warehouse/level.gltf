@@ -13,7 +13,9 @@
 			"nodes":[
 				0,
 				1,
-				2
+				2,
+				3,
+				4
 			]
 		}
 	],
@@ -24,11 +26,18 @@
 		},
 		{
 			"mesh":1,
-			"name":"warehouse"
+			"name":"walls"
 		},
 		{
 			"mesh":2,
 			"name":"crate"
+		},
+		{
+			"name":"_player"
+		},
+		{
+			"mesh":3,
+			"name":"Cube"
 		}
 	],
 	"materials":[
@@ -99,6 +108,19 @@
 					"material":1
 				}
 			]
+		},
+		{
+			"name":"Cube",
+			"primitives":[
+				{
+					"attributes":{
+						"POSITION":11,
+						"NORMAL":12,
+						"TEXCOORD_0":13
+					},
+					"indices":14
+				}
+			]
 		}
 	],
 	"textures":[
@@ -129,14 +151,14 @@
 			"componentType":5126,
 			"count":6,
 			"max":[
-				20,
+				400,
 				0,
-				11
+				220
 			],
 			"min":[
-				-1,
+				-20,
 				0,
-				-1
+				-20
 			],
 			"type":"VEC3"
 		},
@@ -157,14 +179,14 @@
 			"componentType":5126,
 			"count":14,
 			"max":[
-				20,
-				5.320976257324219,
-				11
+				400,
+				106.41952514648438,
+				220
 			],
 			"min":[
-				-1,
+				-20,
 				0,
-				-1
+				-20
 			],
 			"type":"VEC3"
 		},
@@ -191,14 +213,14 @@
 			"componentType":5126,
 			"count":14,
 			"max":[
-				19.464399337768555,
-				2,
-				10.501848220825195
+				389.2879943847656,
+				40,
+				210.03695678710938
 			],
 			"min":[
-				17.464399337768555,
+				349.2879943847656,
 				0,
-				8.501848220825195
+				170.03695678710938
 			],
 			"type":"VEC3"
 		},
@@ -216,6 +238,40 @@
 		},
 		{
 			"bufferView":10,
+			"componentType":5123,
+			"count":36,
+			"type":"SCALAR"
+		},
+		{
+			"bufferView":11,
+			"componentType":5126,
+			"count":24,
+			"max":[
+				0.8508999943733215,
+				0.8508999943733215,
+				0.8508999943733215
+			],
+			"min":[
+				-0.8508999943733215,
+				-0.8508999943733215,
+				-0.8508999943733215
+			],
+			"type":"VEC3"
+		},
+		{
+			"bufferView":12,
+			"componentType":5126,
+			"count":24,
+			"type":"VEC3"
+		},
+		{
+			"bufferView":13,
+			"componentType":5126,
+			"count":24,
+			"type":"VEC2"
+		},
+		{
+			"bufferView":14,
 			"componentType":5123,
 			"count":36,
 			"type":"SCALAR"
@@ -287,6 +343,30 @@
 			"byteLength":72,
 			"byteOffset":1136,
 			"target":34963
+		},
+		{
+			"buffer":0,
+			"byteLength":288,
+			"byteOffset":1208,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":288,
+			"byteOffset":1496,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":192,
+			"byteOffset":1784,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":72,
+			"byteOffset":1976,
+			"target":34963
 		}
 	],
 	"samplers":[
@@ -297,8 +377,8 @@
 	],
 	"buffers":[
 		{
-			"byteLength":1208,
-			"uri":"test-world.bin"
+			"byteLength":2048,
+			"uri":"level.bin"
 		}
 	]
 }
