@@ -20,6 +20,13 @@ This repository provides the source files of the artwork in the WebGPU game **Or
 - Saved as `.xcf` files
 - Exported as `.png` files
 - Compressed further using TinyPNG
+### part.json
+Every level folder must contain a copy of the file `part.json` whose content is:
+```json
+{
+ "extends": "level.."
+}
+```
 ## Naming Convention
 ```
 ▼ orbital-source
@@ -29,6 +36,8 @@ This repository provides the source files of the artwork in the WebGPU game **Or
 ┊  ╰─ ≡ level.gltf   ⎩  Packed
 ┊  ┊                 ⎧  Into
 ┊  ╰─ ▣ level.bin    ⎪  Game
+┊  ┊                 ⎪
+┊  ╰─ ≡ part.json    ⎪
 ┊  ┊                 ⎪
 ┊  ╰─ ▣ foo.png      ⎪
 ┊  ╰─ ▣ bar.png      ⎪
